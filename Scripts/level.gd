@@ -15,7 +15,7 @@ func _ready():
 func variables():
 	# sintaxes de uma variavel
 	# var nome_variavel = valor_variavel
-	var name = "Adna Léticia"
+	var _name = "Adna Léticia"
 	var count = 0
 
 	# Operadores de atribuição
@@ -28,8 +28,14 @@ func variables():
 	
 	count -= 1
 	print(count)
+
+
+func type_of_variables() -> void:
+	# tipo String
+	# tipagem em váriaveis: var nome_variavel: tipo = valor
+	var _type_string: String = "Isso é uma String"
+	var _name_of_lover: String = "Adna Léticia"
 	
-func type_of_variables():
+
+func object_methods():
 	pass
-	
-	
