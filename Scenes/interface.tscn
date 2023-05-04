@@ -1,0 +1,83 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwsvti3tbswuw"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_5q1lh"]
+font_size = 46
+
+[node name="Interface" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.27451, 0.278431, 1)
+
+[node name="Container" type="GridContainer" parent="Background"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -413.0
+offset_top = -120.5
+offset_right = 413.0
+offset_bottom = 120.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 3
+
+[node name="Title" type="Label" parent="Background/Container"]
+layout_mode = 2
+text = "Hello World"
+label_settings = SubResource("LabelSettings_5q1lh")
+
+[node name="Title2" type="Label" parent="Background/Container"]
+layout_mode = 2
+text = "Hello World"
+label_settings = SubResource("LabelSettings_5q1lh")
+
+[node name="Title3" type="Label" parent="Background/Container"]
+layout_mode = 2
+text = "Hello World"
+label_settings = SubResource("LabelSettings_5q1lh")
+
+[node name="Title4" type="Label" parent="Background/Container"]
+layout_mode = 2
+text = "Hello World"
+label_settings = SubResource("LabelSettings_5q1lh")
+
+[node name="Title5" type="Label" parent="Background/Container"]
+layout_mode = 2
+text = "Hello World"
+label_settings = SubResource("LabelSettings_5q1lh")
+
+[node name="Title6" type="Label" parent="Background/Container"]
+layout_mode = 2
+text = "Hello World"
+label_settings = SubResource("LabelSettings_5q1lh")
+
+[node name="Title7" type="Label" parent="Background/Container"]
+layout_mode = 2
+text = "Hello World"
+label_settings = SubResource("LabelSettings_5q1lh")
+
+[node name="Title8" type="Label" parent="Background/Container"]
+layout_mode = 2
+text = "Hello World"
+label_settings = SubResource("LabelSettings_5q1lh")
+
+[node name="Title9" type="Label" parent="Background/Container"]
+layout_mode = 2
+text = "Hello World"
+label_settings = SubResource("LabelSettings_5q1lh")
