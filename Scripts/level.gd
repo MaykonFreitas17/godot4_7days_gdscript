@@ -15,7 +15,7 @@ func _ready():
 	print("Hello, World!")
 	print("Adna Léticia, Você é a garota mais Linda do Mundo!")
 	
-	conditional_structure()
+	arrays_list()
 	
 func variables():
 	# sintaxes de uma variavel
@@ -104,5 +104,18 @@ func conditional_structure() -> void:
 		# Caso padrão (caso não atenda nenhuma condição)
 		_:
 			print("Classe Indefinida")
-			
 
+func arrays_list() -> void:
+	var list: Array = ["Maykon", 21, 1.68] # exemplo de arrays
+	print(list)
+	
+	# Acessando um elemento especifico
+	print(list[0])
+	print(list[1])
+	print(list[2])
+	
+	# metodos de arrays
+	print(len(list)) # tamanho do array - quantidade de elementos
+	print(list.size()) # tamanho do array - quantidade de elementos
+	print(list.has(21)) # verifica se existe o valor dentro do array e retorna um booleano
+	print(list.find("Maykon")) # Procura um elemento na lista e retorna o seu indice | retorna -1 se não achar nada
