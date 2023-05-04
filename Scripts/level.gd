@@ -74,7 +74,35 @@ func exercise_session_03() -> void:
 	print(_my_goals)
 
 func conditional_structure() -> void:
+	# Estrutura Condicional: if/elif/else
 	var _age: int = 18
-	if _age >= 18:
+
+	if _age > 18:
 		print("É maior de idade")
+	elif _age == 18:
+		print("Tem 18 anos")
+	else:
+		print("É menor de idade")
+		
+	# operadores: and, or, not
+	
+	# Exercicio 01
+	var _number: int = 11
+	if _number > 0 and _number <= 10:
+		print("Número entre 1 e 10")
+		
+	
+	# Estrutura Condicional: Match/Case
+	var player_class: String = "Warrior 2"
+	match player_class:
+		"Warrior":
+			print("Itens: Espada lvl 2 | Escudo lvl 1")
+		
+		"Mage":
+			print("Itens: Cajado lvl 4 | Livro de Conjuração lvl 5")
+		
+		# Caso padrão (caso não atenda nenhuma condição)
+		_:
+			print("Classe Indefinida")
+			
 
