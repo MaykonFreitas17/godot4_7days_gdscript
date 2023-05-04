@@ -4,6 +4,9 @@ extends Node2D
 # @export
 @export var my_name: String # Exibe no editor, podendo ser editado fora do código
 
+# Contantes
+const CURRENT_LEVEL: int = 2 # Valor não pode ser alterado/não muda
+
 # _ready é chamada quando o objeto do script estiver pronto,
 # assim como os seus filhos.
 # Ela é executada apenas uma vez.
@@ -12,8 +15,7 @@ func _ready():
 	print("Hello, World!")
 	print("Adna Léticia, Você é a garota mais Linda do Mundo!")
 	
-	variables()
-	interger_number()
+	conditional_structure()
 	
 func variables():
 	# sintaxes de uma variavel
@@ -48,10 +50,8 @@ func type_of_variables() -> void:
 	var _type_string: String = "Isso é uma String"
 	var _name_of_lover: String = "Adna Léticia"
 	
-
 func object_methods():
 	pass
-
 
 func boolean_variables():
 	var is_alive: bool = true
@@ -62,7 +62,19 @@ func boolean_variables():
 	print(not is_alive) # inverte => false
 	print(!attacking) # inverte => true
 
+func exercise_session_03() -> void:
+	# informações
+	var _name: String = "Maykon Freitas"
+	var _age: int = 21
+	var _my_goals: String = "Eu pretendo aprender o máximo possivel de GDscript e Godot, para poder fazer vários projetos nessa engine que tanto me chama a atenção!"
+	
+	# exibição
+	print("Meu Nome é " + _name)
+	print("Eu tenho " + str(_age) + " anos de idade")
+	print(_my_goals)
 
-
-
+func conditional_structure() -> void:
+	var _age: int = 18
+	if _age >= 18:
+		print("É maior de idade")
 
