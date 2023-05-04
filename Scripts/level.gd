@@ -1,6 +1,9 @@
 # Herdando do objeto Node2D
 extends Node2D
 
+# @export
+@export var my_name: String # Exibe no editor, podendo ser editado fora do código
+
 # _ready é chamada quando o objeto do script estiver pronto,
 # assim como os seus filhos.
 # Ela é executada apenas uma vez.
@@ -10,7 +13,7 @@ func _ready():
 	print("Adna Léticia, Você é a garota mais Linda do Mundo!")
 	
 	variables()
-	
+	interger_number()
 	
 func variables():
 	# sintaxes de uma variavel
@@ -28,7 +31,16 @@ func variables():
 	
 	count -= 1
 	print(count)
+	
+	# Formatação de Texto
+	print("Olá, meu nome é " + my_name)
 
+func interger_number() -> void:
+	# whole numbers (Números inteiros)
+	var exemplo1: int = 1
+	var exemplo2: float = 1.5
+	print(exemplo1)
+	print(exemplo2)
 
 func type_of_variables() -> void:
 	# tipo String
@@ -39,3 +51,18 @@ func type_of_variables() -> void:
 
 func object_methods():
 	pass
+
+
+func boolean_variables():
+	var is_alive: bool = true
+	var attacking: bool = false
+	
+	print(is_alive) # true
+	print(attacking) # false
+	print(not is_alive) # inverte => false
+	print(!attacking) # inverte => true
+
+
+
+
+
