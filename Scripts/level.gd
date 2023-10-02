@@ -15,7 +15,7 @@ func _ready():
 	print("Hello, World!")
 	print("Adna Léticia, Você é a garota mais Linda do Mundo!")
 	
-	arrays_list()
+	repetition_structure()
 	
 func variables():
 	# sintaxes de uma variavel
@@ -119,3 +119,42 @@ func arrays_list() -> void:
 	print(list.size()) # tamanho do array - quantidade de elementos
 	print(list.has(21)) # verifica se existe o valor dentro do array e retorna um booleano
 	print(list.find("Maykon")) # Procura um elemento na lista e retorna o seu indice | retorna -1 se não achar nada
+	
+func repetition_structure() -> void:
+	var list: Array = [1, 2, 3, 4]
+	
+	# Estrutura de repetidção for
+	for n in list:
+		if n == 3:
+			continue # o CONTINUE vai fazer com que o loop ignore a iteração atual e pule para a próxima
+			
+		if n >= 4:
+			print(n)
+			break # o BREAK vai fazer com que o loop pare na iteração atual e ignore as próxima
+	
+	# Iterando pelo indece dos elementos da lista
+	for n in list.size():
+		print(n)
+		
+	# Usando o range
+	for i in range(10, 25):
+		print(i)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

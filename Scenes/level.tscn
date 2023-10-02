@@ -8,5 +8,5 @@ script = ExtResource("1_6rfny")
 my_name = "Adna Léticia"
 
 [node name="Player" type="Sprite2D" parent="."]
-position = Vector2(597, 329)
+position = Vector2(384, 213)
 texture = ExtResource("2_gxkkf")
