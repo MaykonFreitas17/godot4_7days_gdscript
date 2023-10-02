@@ -15,7 +15,7 @@ func _ready():
 	print("Hello, World!")
 	print("Adna Léticia, Você é a garota mais Linda do Mundo!")
 	
-	repetition_structure()
+	manipulating_scene_groups()
 	
 func variables():
 	# sintaxes de uma variavel
@@ -140,6 +140,16 @@ func repetition_structure() -> void:
 	for i in range(10, 25):
 		print(i)
 
+func manipulating_scene_groups() -> void:
+	print(get_tree().get_nodes_in_group("Player"))
+	print(get_tree().get_nodes_in_group("Enemies"))
+	
+	# Iterando sobre a lista de objetos dos grupos
+	for player in get_tree().get_nodes_in_group("Player"):
+		print(player.name)
+	
+	for enemy in get_tree().get_nodes_in_group("Enemies"):
+		print(enemy.name)
 
 
 
