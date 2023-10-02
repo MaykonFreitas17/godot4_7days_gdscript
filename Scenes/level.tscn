@@ -14,15 +14,3 @@ texture = ExtResource("2_gxkkf")
 [node name="Enemy_01" type="Sprite2D" parent="." groups=["Enemies"]]
 position = Vector2(808, 197)
 texture = ExtResource("2_gxkkf")
-
-[node name="Enemy_02" type="Sprite2D" parent="." groups=["Enemies"]]
-position = Vector2(445, 503)
-texture = ExtResource("2_gxkkf")
-
-[node name="Enemy_03" type="Sprite2D" parent="." groups=["Enemies"]]
-position = Vector2(1053, 493)
-texture = ExtResource("2_gxkkf")
-
-[node name="Enemy_04" type="Sprite2D" parent="." groups=["Enemies"]]
-position = Vector2(852, 565)
-texture = ExtResource("2_gxkkf")

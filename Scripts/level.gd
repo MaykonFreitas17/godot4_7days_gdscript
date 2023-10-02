@@ -1,6 +1,10 @@
 # Herdando do objeto Node2D
 extends Node2D
 
+# Referenciando objetos da cena por código
+@onready var player: Sprite2D = get_node("Player")
+@onready var enemy: Sprite2D = get_node("Enemy_01")
+
 # @export
 @export var my_name: String # Exibe no editor, podendo ser editado fora do código
 
@@ -15,7 +19,10 @@ func _ready():
 	print("Hello, World!")
 	print("Adna Léticia, Você é a garota mais Linda do Mundo!")
 	
-	manipulating_scene_groups()
+	# Trabalhando com o objeto referenciado
+	print(player.name)
+	print(enemy.name)
+	
 	
 func variables():
 	# sintaxes de uma variavel
