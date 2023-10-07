@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://rxto24otdpbd"]
+[gd_scene load_steps=2 format=3 uid="uid://rxto24otdpbd"]
+
+[ext_resource type="Script" path="res://Scripts/calculator.gd" id="1_xi6nr"]
 
 [node name="Interface" type="Control"]
 layout_mode = 3
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_xi6nr")
 
 [node name="Background" type="ColorRect" parent="."]
 layout_mode = 1
@@ -70,74 +73,99 @@ theme_override_constants/h_separation = 10
 theme_override_constants/v_separation = 10
 columns = 4
 
-[node name="Button" type="Button" parent="Background/ButtonContainer"]
+[node name="Reset" type="Button" parent="Background/ButtonContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "C"
+
+[node name="1" type="Button" parent="Background/ButtonContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "1"
+
+[node name="2" type="Button" parent="Background/ButtonContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "2"
+
+[node name="3" type="Button" parent="Background/ButtonContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "3"
+
+[node name="4" type="Button" parent="Background/ButtonContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "4"
+
+[node name="5" type="Button" parent="Background/ButtonContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "5"
+
+[node name="6" type="Button" parent="Background/ButtonContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "6"
+
+[node name="7" type="Button" parent="Background/ButtonContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "7"
+
+[node name="8" type="Button" parent="Background/ButtonContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "8"
+
+[node name="9" type="Button" parent="Background/ButtonContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "9"
+
+[node name="0" type="Button" parent="Background/ButtonContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "0"
+
+[node name="=" type="Button" parent="Background/ButtonContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "="
+
+[node name="+" type="Button" parent="Background/ButtonContainer" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "+"
 
-[node name="Button2" type="Button" parent="Background/ButtonContainer"]
+[node name="-" type="Button" parent="Background/ButtonContainer" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "+"
+text = "-"
 
-[node name="Button3" type="Button" parent="Background/ButtonContainer"]
+[node name="*" type="Button" parent="Background/ButtonContainer" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "+"
+text = "*"
 
-[node name="Button4" type="Button" parent="Background/ButtonContainer"]
+[node name="div" type="Button" parent="Background/ButtonContainer" groups=["button"]]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "+"
-
-[node name="Button5" type="Button" parent="Background/ButtonContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "+"
-
-[node name="Button6" type="Button" parent="Background/ButtonContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "+"
-
-[node name="Button7" type="Button" parent="Background/ButtonContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "+"
-
-[node name="Button8" type="Button" parent="Background/ButtonContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "+"
-
-[node name="Button9" type="Button" parent="Background/ButtonContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "+"
-
-[node name="Button10" type="Button" parent="Background/ButtonContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "+"
-
-[node name="Button11" type="Button" parent="Background/ButtonContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "+"
-
-[node name="Button12" type="Button" parent="Background/ButtonContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "+"
+text = "/
+"
