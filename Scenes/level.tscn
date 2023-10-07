@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://d0vn8l3xybvce"]
+[gd_scene load_steps=4 format=3 uid="uid://d0vn8l3xybvce"]
 
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_6rfny"]
 [ext_resource type="Texture2D" uid="uid://djmr30je1rcjj" path="res://icon.svg" id="2_gxkkf"]
+[ext_resource type="Script" path="res://Scripts/Player.gd" id="3_o2yrx"]
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_6rfny")
@@ -10,6 +11,7 @@ my_name = "Adna Léticia"
 [node name="Player" type="Sprite2D" parent="." groups=["Player"]]
 position = Vector2(96, 100)
 texture = ExtResource("2_gxkkf")
+script = ExtResource("3_o2yrx")
 
 [node name="Enemy_01" type="Sprite2D" parent="." groups=["Enemies"]]
 position = Vector2(808, 197)
